@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technology Experience | The IT</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0A0F24 0%, #162A49 100%);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background: rgba(10, 15, 36, 0.85);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #00A8FF;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: #E0E6ED;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #00A8FF;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 8px 18px;
+      border-radius: 20px;
+      border: 1px solid #00A8FF;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn.login {
+      background: transparent;
+      color: #00A8FF;
+    }
+
+    .btn.login:hover {
+      background: #00A8FF;
+      color: #fff;
+    }
+
+    .btn.signup {
+      background: #00A8FF;
+      color: #fff;
+    }
+
+    .btn.signup:hover {
+      background: #007BFF;
+      box-shadow: 0 0 12px rgba(0, 168, 255, 0.5);
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 120px 20px 80px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #00A8FF;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #B8C2CC;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .hero .explore-btn {
+      background: #00A8FF;
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .hero .explore-btn:hover {
+      background: #007BFF;
+      box-shadow: 0 0 15px rgba(0, 168, 255, 0.6);
+    }
+
+    /* Image + Stats Section */
+    .image-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 60px 80px;
+      flex-wrap: wrap;
+    }
+
+    .image-section img {
+      width: 450px;
+      border-radius: 20px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+      transition: transform 0.4s ease;
+    }
+
+    .image-section img:hover {
+      transform: scale(1.03);
+    }
+
+    .stats-card {
+      background: #FFFFFF;
+      color: #1A2238;
+      border-radius: 20px;
+      padding: 40px;
+      width: 300px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    .stats-card h3 {
+      font-size: 28px;
+      color: #007BFF;
+      margin-bottom: 5px;
+    }
+
+    .stats-card p {
+      font-size: 16px;
+      color: #1A2238;
+      margin-bottom: 20px;
+    }
+
+    .stats-card .divider {
+      height: 1px;
+      background: #E5E7EB;
+      margin: 15px 0;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        padding: 15px 30px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .image-section {
+        flex-direction: column;
+        padding: 40px 20px;
+      }
+
+      .image-section img {
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .stats-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">intel</div>
+    <div class="nav-links">
+      <a href="#">About Us</a>
+      <a href="#">Our Story</a>
+      <a href="#">Services</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="buttons">
+      <button class="btn login">Log in</button>
+      <button class="btn signup">Sign in</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Bring <span>Joy</span> To Your Technology Experience.</h1>
+    <p>Take the head scratching and fist shaking out of your technology experience.
+       With The IT, we’ve got your experience in mind first.</p>
+    <a href="#" class="explore-btn">Explore Now →</a>
+  </section>
+
+  <section class="image-section">
+    <!-- Replace the link below with your own image -->
+    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Team Meeting">
+    
+    <div class="stats-card">
+      <h3>09+</h3>
+      <p>Years Experience</p>
+      <div class="divider"></div>
+      <h3>600+</h3>
+      <p>Projects Done</p>
+      <div class="divider"></div>
+      <h3>250+</h3>
+      <p>Happy Clients</p>
+    </div>
+  </section>
+</body>
+</html>
